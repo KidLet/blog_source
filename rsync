@@ -1,0 +1,8 @@
+#!/bin/bash
+hexo g
+svn rm ~/www/kidlet.github.com/trunk/*
+cp ~/www/blog/public/* ~/www/kidlet.github.com/trunk/ -rf
+svn add ~/www/kidlet.github.com/trunk/*
+svn commit ~/www/kidlet.github.com/trunk -m "$1"
+
+
