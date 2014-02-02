@@ -1,4 +1,5 @@
 #!/bin/bash
+rm ./db.json
 hexo g
 svn rm ~/www/kidlet.github.com/trunk/*
 cp ~/www/blog/public/* ~/www/kidlet.github.com/trunk/ -rf
